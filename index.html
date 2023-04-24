@@ -1,91 +1,504 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport"
-		content="minimum-scale=1.0, width=device-width, maximum-scale=1.0, user-scalable=no, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<!-- <link rel="stylesheet" href="./disneyapp.css"> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="World Family Club Library">
+    <meta name="description" content="World Family Club Library">
+    <meta property="og:title" content="World Family Club Library">
+    <meta property="og:url" content="https://wfelib-jp.readhighlights.com">
+    <meta property="og:image"
+        content="https://web-cdn.chungchy.com/Highlights_wfejp/library/public_html_t/resource/images/common/WF-logo.png.png">
+    <meta property="og:description" content="World Family Club Library">
+    <title>World Family Club Library Home</title>
+    <link rel="stylesheet" href="/disneyapp.css">
+
 </head>
 
 <body>
-	<style>
-		* {
-    margin: 0;
-    padding: 0;
-}
+    <div class="wrap">
+        <header>
+            <h1>
+                <div class="logo"
+                    style="background-image: url(/public_html/resource/images/disney/m_Logo.svg); background-repeat: no-repeat; background-position: center;">
+                    Home</div>
+            </h1>
+            <div class="icon search"
+                style="background-image: url(/public_html/resource/images/disney/icon_search_gray.svg);"></div>
+            <div id="hambergerMenu" class="icon menu"
+                style="background-image: url(/public_html/resource/images/disney/icon_menu.svg);"></div>
+            <ul class="profileInfo">
+                <li class="top">
+                    <img class="profile_img" src="/public_html/resource/images/disney/profile.svg" alt="profile">
+                    <p>both</p>
+                </li>
+                <li class="center">
+                    <div class="change">
+                        <span>Switch to</span>
+                        <p class="highlights">Highlights</p><span>collection</span>
+                    </div>
+                    <div id="matureShowHide" data-status="1">
+                        Hide Mature Content </div>
+                    <div id="faq">FAQ</div>
+                </li>
+                <li class="bottom" id="btnLogout">
+                    <div>Logout</div>
+                </li>
+            </ul>
 
-body {
-    background-color: #333;
-    min-height: 200vh;
-}
+            <div class="search_wrap">
+                <form id="searchForm" onsubmit="return false;">
+                    <img src="/public_html/resource/images/disney/icon_m_back.svg" alt="#" class="search_close">
+                    <div class="searchInput_wrap">
+                        <input class="search_bar" type="text" placeholder="Search">
+                        <span class="clear_btn"></span>
+                    </div>
+                    <span class="enter">Go</span>
+                </form>
+            </div>
 
-.module {
-    height: 100vh;
-    /* Use vh as a fallback for browsers that do not support Custom Properties */
-    height: calc(var(--vh, 1vh) * 100);
-    margin: 0 auto;
-    max-width: 30%;
-}
+        </header>
+        <script>
+            var sMuNationCode = "JP";
+            var aJsLang = JSON.parse('false');
+            var sUserLevel = "4";
+        </script>
+        <div class="section01">
+            <div class="cover">
+                <img class="section01_bg"
+                    src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484748541.jpeg" alt="">
+                <div class="con">
+                    <div class="tit">
+                        <h2>Today’s Book</h2>
+                    </div>
+                    <div class="book" id="todayBook" project_sn="136" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484748541.jpeg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section02">
+            <div class="con">
+                <div class="tit">
+                    <p class="userName">both’s</p>
+                    <h2>Last Read</h2>
+                </div>
+                <div class="slide_wrap">
+                    <ul class="lastRead">
+                        <li class="item" project_sn="72" book_level="4">
+                            <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484735664.jpeg"
+                                alt="">
+                        </li>
+                        <li class="item" project_sn="151" book_level="4">
+                            <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368074780.jpeg"
+                                alt="">
+                            <div class="recommend">
+                                <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                                <span>mature<br>content</span>
+                            </div>
+                        </li>
+                        <li class="item" project_sn="31" book_level="2">
+                            <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368097796.jpeg"
+                                alt="">
+                        </li>
+                        <li class="item" project_sn="50" book_level="3">
+                            <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781423193340.jpeg"
+                                alt="">
+                        </li>
+                        <li class="item" project_sn="140" book_level="3">
+                            <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484786871.jpeg"
+                                alt="">
+                        </li>
+                        <li class="item" project_sn="63" book_level="3">
+                            <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368097833.jpeg"
+                                alt="">
+                        </li>
+                        <li class="item" project_sn="191" book_level="2">
+                            <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368051293.jpeg"
+                                alt="">
+                        </li>
+                        <li class="item" project_sn="139" book_level="2">
+                            <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484728871.jpeg"
+                                alt="">
+                        </li>
+                        <li class="item" project_sn="133" book_level="3">
+                            <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484711699.jpeg"
+                                alt="">
+                        </li>
+                        <li class="item" project_sn="137" book_level="2">
+                            <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484786901.jpeg"
+                                alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section03">
+            <div class="con">
+                <div class="tit">
+                    <h2>My Reading</h2>
+                </div>
+                <div class="stat">
+                    <dl>
+                        <dt>Words Read</dt>
+                        <dd>263,423</dd>
+                    </dl>
+                    <dl>
+                        <dt>Books Read</dt>
+                        <dd>486</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="section04">
+            <div class="con">
+                <div class="sort_wrap">
+                    <div class="select_wrap level">
+                        <div class="select">
+                            <p>Level 3</p>
+                            <img src="/public_html/resource/images/disney/icon_Chevron.svg" alt="cho">
+                        </div>
+                    </div>
+                    <div class="select_wrap sort">
+                        <div class="select">
+                            <p>Title A-Z</p>
+                            <img src="/public_html/resource/images/disney/icon_list.svg" alt="list">
+                        </div>
+                    </div>
+                    <div class="favourite">
+                        <img src="/public_html/resource/images/disney/icon_favourite+line.svg" alt="favourite">
+                        <img src="/public_html/resource/images/disney/icon_favourite+fill.svg" alt="favourite">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section05">
+            <div class="con">
+                <ul class="item_wrap">
+                    <li class="item" project_sn="184" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368058070.jpeg"
+                            alt="A Day with Dad">
+                    </li>
+                    <li class="item" project_sn="11" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368097734.jpeg"
+                            alt="A Day with Papa">
+                    </li>
+                    <li class="item" project_sn="170" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368001564.jpeg"
+                            alt="A Family Mystery">
+                    </li>
+                    <li class="item" project_sn="179" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368078597.jpeg"
+                            alt="A Sea Monster Story">
+                    </li>
+                    <li class="item" project_sn="47" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368098427.jpeg"
+                            alt="Adventure Awaits">
+                    </li>
+                    <li class="item" project_sn="77" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368071529.jpeg"
+                            alt="Another Grand Adventure">
+                    </li>
+                    <li class="item" project_sn="74" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484751091.jpeg"
+                            alt="Attack of the Ferb Snatchers!">
+                    </li>
+                    <li class="item" project_sn="132" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368044806.jpeg"
+                            alt="Beyond the Palace Walls">
+                    </li>
+                    <li class="item" project_sn="183" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781423189350.jpeg"
+                            alt="Boo on the Loose">
+                    </li>
+                    <li class="item" project_sn="36" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368057004.jpeg"
+                            alt="Disney" s="" spooky="" collection'="">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                    <li class="item" project_sn="43" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368070553.jpeg"
+                            alt="Fight For Kumandra, The">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                    <li class="item" project_sn="6" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484701706.jpeg"
+                            alt="Fight to the Finish!">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                    <li class="item" project_sn="226" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368013307.jpeg"
+                            alt="Forces of Destiny: Meet the Heroes ">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                    <li class="item" project_sn="215" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484719992.jpeg"
+                            alt="Hera" s="" phantom="" flight'="">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                    <li class="item" project_sn="178" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484719176.jpeg"
+                            alt="Journey into the Mind">
+                    </li>
+                    <li class="item" project_sn="186" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368066839.jpeg"
+                            alt="Journey to You">
+                    </li>
+                    <li class="item" project_sn="216" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484730645.jpeg"
+                            alt="Kanan" s="" jedi="" training'="">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                    <li class="item" project_sn="78" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484703281.jpeg"
+                            alt="Lights, Camera, Perry?">
+                    </li>
+                    <li class="item" project_sn="75" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781423192169.jpeg"
+                            alt="Lost at Sea">
+                    </li>
+                    <li class="item" project_sn="54" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484728703.jpeg"
+                            alt="Meet Fawn: The Animal Talent Fairy">
+                    </li>
+                    <li class="item" project_sn="113" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368056861.jpeg"
+                            alt="One Small Ruff for Pup-Kind">
+                    </li>
+                    <li class="item" project_sn="16" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368064903.jpeg"
+                            alt="Out of This World">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                    <li class="item" project_sn="96" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368001847.jpeg"
+                            alt="Pride Lands Patrol">
+                    </li>
+                    <li class="item" project_sn="28" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484799147.jpeg"
+                            alt="Quest for the Heart">
+                    </li>
+                    <li class="item" project_sn="207" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484717028.jpeg"
+                            alt="Rescue from Jabba" s="" palace'="">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                    <li class="item" project_sn="151" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368074780.jpeg"
+                            alt="Spidey and His Amazing Friends Super Hero Hiccups">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                    <li class="item" project_sn="225" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368012676.jpeg"
+                            alt="Star Wars: The Last Jedi Rey" s="" journey'="">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                    <li class="item" project_sn="2" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368066808.jpeg"
+                            alt="Stronger Together">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                    <li class="item" project_sn="72" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484735664.jpeg"
+                            alt="The Big Case">
+                    </li>
+                    <li class="item" project_sn="224" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484720066.jpeg"
+                            alt="The Force Awakens: Finn &amp; the First Order">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                    <li class="item" project_sn="176" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368020800.jpeg"
+                            alt="The Incredible Elastigirl">
+                    </li>
+                    <li class="item" project_sn="227" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368013215.jpeg"
+                            alt="The Last Jedi: A Leader Named Leia">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                    <li class="item" project_sn="136" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484748541.jpeg"
+                            alt="The Secret Spell Book">
+                    </li>
+                    <li class="item" project_sn="142" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368043861.jpeg"
+                            alt="This is Captain Marvel">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                    <li class="item" project_sn="210" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368010085.jpeg"
+                            alt="Trouble on Tatooine">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                    <li class="item" project_sn="206" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781484711750.jpeg"
+                            alt="Use The Force!">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                    <li class="item" project_sn="131" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368025157.jpeg"
+                            alt="Vampirina in the Fall">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                    <li class="item" project_sn="201" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368050968.jpeg"
+                            alt="Vote for Minnie">
+                    </li>
+                    <li class="item" project_sn="4" book_level="4">
+                        <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781368099721.jpeg"
+                            alt="Zoms vs Poms">
+                        <div class="recommend">
+                            <img src="/public_html/resource/images/disney/icon_recommend.svg" alt="">
+                            <span>mature<br>content</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="popup">
+        <div class="opacity"></div>
+        <div class="preview_book act"><!-- book info 팝업 -->
+            <div class="cover" style="background-image: url(https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781423197232.jpeg);">
+                <img src="https://content-cdn.chungchy.com/Disney_Content_Global/Thumbnail/9781423197232.jpeg" alt="">
+                <div class="btn_close">
+                    <img src="/public_html/resource/images/disney/icon_close.svg" alt="">
+                </div>
+                <div class="title">
+                    <p>A Tale of Two Sisters</p>
+                </div>
+            </div>
+          <div class="info">
+              <div class="metaData_wrap">
+                  <ul class="top">
+                      <li>
+                          <p>Level</p>
+                          <p>2</p>
+                      </li>
+                      <li>
+                          <p>Pages</p>
+                          <p>32</p>
+                      </li>
+                      
+                      <li>
+                          <p>Lexile</p>
+                          <p>390</p>
+                      </li>
+                  </ul>
+                  <div id="favDetail" class="favourite act" project_sn="21" data-like="Y">
+                      <img src="/public_html/resource/images/disney/icon_favourite+fill.svg" alt="favourite">
+                  </div>
+              </div>
+              
+              <p class="text_box" body-scroll-lock-ignore="true">When Elsa becomes queen of Arendelle, she accidentally creates a snowstorm in the entire kingdom! Can the sisters can save the kingdom in time?When Elsa becomes queen of Arendelle, she accidentally creates a snowstorm in the entire kingdom! Can the sisters can save the kingdom in time?When Elsa becomes queen of Arendelle, she accidentally creates a snowstorm in the entire kingdom! Can the sisters can save the kingdom in time?When Elsa becomes queen of Arendelle, she accidentally creates a snowstorm in the entire kingdom! Can the sisters can save the kingdom in time?When Elsa becomes queen of Arendelle, she accidentally creates a snowstorm in the entire kingdom! Can the sisters can save the kingdom in time?</p>
+              <div id="btnDetailRead" class="btn_read">Read</div>
+        <div class="level_popup select_popup">
+            <p>Level</p>
+            <ul>
+                <li data-lv="1" data-value="Phonics">Phonics</li>
+                <li data-lv="2" data-value="Level 1">Level 1</li>
+                <li data-lv="3" data-value="Level 2">Level 2</li>
+                <li data-lv="4" data-value="Level 3" class="act">Level 3</li>
+            </ul>
+        </div>
+        <div class="sorting_popup select_popup">
+            <p>Sorting</p>
+            <ul>
+                <li value="1" class="act" data-value="Title A-Z">Title A-Z</li>
+                <li value="2" data-value="Title Z-A">Title Z-A</li>
+                <li value="3" data-value="Series A-Z">Series A-Z</li>
+                <li value="4" data-value="Series Z-A">Series Z-A</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p class="copy">Copyright © 2023 Disney Enterprises, Inc. <br>All rights reserved.</p>
+        <div class="info">
+            <span id="termsofuse">Terms of Use</span>
+            <span>System Requirements</span>
+        </div>
+    </footer>
 
-.module__item {
-    align-items: center;
-    display: flex;
-    height: 20%;
-    justify-content: center;
-}
+    <script src="/public_html/resource/js/common/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="/public_html/resource/js/common/jquery.cookie.js" type="text/javascript"></script>
+    <script src="/public_html/resource/js/common/ARBITER.js" type="text/javascript"></script>
+    <script src="/public_html/resource/js/common/common.js?v=2023040302" type="text/javascript"></script>
+    <script src="/public_html/resource/js/disney/bodyScrollLock.js?v=2023040302" type="text/javascript"></script>
+    <script type="text/javascript"
+        src="https://web-cdn.chungchy.com/Highlights_wfejp/library/public_html_t/resource/js/disney/disneyapp.js?v=2023042401"></script>
+    <script type="text/javascript"
+        src="https://web-cdn.chungchy.com/Highlights_wfejp/library/public_html_t/resource/js/disney/disneyappheader.js?v=2023042001"></script>
+    <script src="./jquery-3.3.1.min.js"></script>
 
-.module__item:nth-child(odd) {
-    background-color: #fff;
-    color: #F73859;
-}
-
-.module__item:nth-child(even) {
-    background-color: #F73859;
-    color: #F1D08A;
-}
-
-.module__item:last-child{
-    position: relative;
-}
-
-.module__item:last-child span{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: calc(100% - 40px);
-    height: 80px;
-    background-color: purple;
-    color: #fff;
-    font-size: 16px;
-    border-radius: 1000px;
-}
-	</style>
-	<div class="module">
-		<div class="module__item">20%</div>
-		<div class="module__item">40%</div>
-		<div class="module__item">60%</div>
-		<div class="module__item">80%</div>
-		<div class="module__item">100%
-			<span class="btn">버튼</span>
-		</div>
-	  </div>
 </body>
 
-<script>
-	// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-	let vh = window.innerHeight * 0.01;
-	// Then we set the value in the --vh custom property to the root of the document
-	document.documentElement.style.setProperty('--vh', `${vh}px`);
-
-	// We listen to the resize event
-	window.addEventListener('resize', () => {
-		// We execute the same script as before
-		let vh = window.innerHeight * 0.01;
-		document.documentElement.style.setProperty('--vh', `${vh}px`);
-	});
-</script>
-
 </html>
+
+<script>
+    $(".item").click(function(e){
+        e.preventDefault();
+        $("body").addClass("act");
+        $(".popup").addClass("act");
+        $(".preview_book").addClass("act");
+    });
+    $(".btn_close").click(function(e){
+        $("body").removeClass("act");
+        $(".popup").removeClass("act");
+        $(".preview_book").removeClass("act");
+    });
+</script>
